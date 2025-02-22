@@ -50,3 +50,17 @@ console.log("User Category:", userCategory);
 let isAutheticated = true;
 let authenticationStatus = isAutheticated?"Authenticated":"Not authenticated";
 console.log("Authentication Status:", authenticationStatus);
+
+let person = prompt("Are you an \n1.Employee, \n2.Enrolled Member, \n3.Subscriber or a \n4.Non-Subscriber\n\n(Enter the number): ");
+let dietrySer;
+
+if (person=="Employee" || person==1) {
+    dietrySer = "Access";
+} else if(person=="Enrolled Member"||person==2) {
+    dietrySer = "Access and One-on-One interation with dietician";
+} else if(person=="Subscriber"||person==3) {
+    dietrySer = "Partial Acesss";
+}else{
+    dietrySer = "No Access, At least subscribe to our services first";
+}
+console.log("Your status of dietry services: ",dietrySer);
