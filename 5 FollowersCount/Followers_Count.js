@@ -18,3 +18,7 @@ function checkCounValue() {
       }
 }
 
+function resetFollowers(){
+    count = 0;
+    displayCount();
+}
