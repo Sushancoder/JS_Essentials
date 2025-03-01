@@ -1,10 +1,11 @@
 const breakfastMenu = ['Pancakes', 'Eggs Benedict', 'Oatmeal', 'Frittata'];
+const breakfastprices = ['12', '22.99', '21.99', '15']
 const mainCourseMenu = ['Steak', 'Pasta', 'Burger', 'Salmon'];
 const dessertMenu = ['Cake', 'Ice Cream', 'Pudding', 'Fruit Salad'];
 
 
 // Mapping array items as paragraph items
-const breakfastMenuItemsHTML = breakfastMenu.map((item, index) =>`<p>Item ${index + 1}: ${item}</p>`).join('');
+const breakfastMenuItemsHTML = breakfastMenu.map((item, index) =>`<p>Item ${index + 1}: ${item} - $${breakfastprices[index]}</p>`).join('');
 document.getElementById('breakfastMenuItems').innerHTML = breakfastMenuItemsHTML;
 
 let mainCourseItem = '';
