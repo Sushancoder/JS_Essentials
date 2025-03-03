@@ -20,6 +20,9 @@ function startTest() {
 function endTest() {
     endTime = new Date().getTime();
 
+    // Display characters typed
+    let chars = (document.getElementById("userInput").value).length;
+
     // Disable user input
     document.getElementById("userInput").readOnly = true;
 
@@ -28,7 +31,7 @@ function endTest() {
     var userTypedText = document.getElementById("userInput").value;
 
     // Split the text using regex to count words correctly
-    var typedWords = userTypedText.split(/\s+/).filter(function (word) {
+    const typedWords = userTypedText.split(/\s+/).filter(function (word) {
         return word !== "";
     }).length;
 
@@ -37,10 +40,10 @@ function endTest() {
     if (timeElapsed !== 0 && !isNaN(typedWords)) {
         wpm = Math.round((typedWords / timeElapsed) * 60);
     }
-
     // Display the results
     var outputDiv = document.getElementById("output");
     outputDiv.innerHTML = "<h2>Typing Test Results:</h2>" +
+        "<p>Characters Typed: " + chars + "</p>" +
         "<p>Words Typed: " + typedWords + "</p>" +
         "<p>Time Elapsed: " + timeElapsed.toFixed(2) + " seconds</p>" +
         "<p>Words Per Minute (WPM): " + wpm + "</p>";
