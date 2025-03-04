@@ -20,7 +20,12 @@ function multiply(a, b) {
     debugger;
 
     // Multiply the numbers
+    const add = a + b;
+    const diff = a - b;
+    const diff2 = ab - b;
+    const quot = a / b;
     return a * b;
+    
 }
 
 function displayResult(result) {
