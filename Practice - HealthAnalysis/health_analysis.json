@@ -19,7 +19,7 @@
       },
       {
         "name": "Diabetes",
-        "imagesrc":"diabeties.jpg",
+        "imagesrc":"https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Main_symptoms_of_diabetes.svg/495px-Main_symptoms_of_diabetes.svg.png",
         "symptoms": [
           "Frequent urination",
           "Increased thirst",
@@ -36,7 +36,7 @@
       },
       {
         "name": "High Blood Pressure",
-        "imagesrc":"blood_pressure.jpg",
+        "imagesrc":"https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Blood_Pressure_-_Take_Another_Person.png/330px-Blood_Pressure_-_Take_Another_Person.png",
         "symptoms": [
           "Headaches",
           "Shortness of breath",
